@@ -9,12 +9,48 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "Control Points": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "value": "Control Points"
+            }
+        },
+        "control-points": {
+            "prototype": "digit/ui/number-field.reel",
+            "properties": {
+                "element": {"#": "control-points"},
+                "enabled": true,
+                "max": "3",
+                "min": "1",
+                "step": "1",
+                "value": "1"
+            }
+        },
+        "Project Details": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "Project Details"},
+                "value": "Project Details"
+            }
+        },
+        "text": {
+            "prototype": "digit/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Control Points"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="ProjectProperties">
+        <h1 data-montage-id="project-details-heading">
+            Project Details
+        </h1>
+        <p data-montage-id="text"></p>
+        <input type="number" data-montage-id="control-points" id="control-points">
     </div>
 </body>
 </html>

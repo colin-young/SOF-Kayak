@@ -13,6 +13,83 @@
                 "element": {"#": "main"}
             }
         },
+        "activeSection": {
+            "prototype": "ui/views/active-section.reel",
+            "properties": {
+                "element": {"#": "activeSection"}
+            }
+        },
+        "bodyPlan": {
+            "prototype": "ui/views/body-plan.reel",
+            "properties": {
+                "element": {"#": "bodyPlan"}
+            }
+        },
+        "control-sections": {
+            "prototype": "digit/ui/number-field.reel",
+            "properties": {
+                "enabled": true,
+                "max": "3",
+                "min": "1",
+                "step": "1",
+                "value": "2"
+            }
+        },
+        "frames": {
+            "prototype": "digit/ui/number-field.reel",
+            "properties": {
+                "enabled": true,
+                "min": "1",
+                "step": "1",
+                "value": "5"
+            }
+        },
+        "halfBreadth": {
+            "prototype": "ui/views/half-breadth.reel",
+            "properties": {
+                "element": {"#": "halfBreadth"}
+            }
+        },
+        "image": {
+            "prototype": "digit/ui/image.reel",
+            "properties": {
+                "crossOrigin": null,
+                "src": "http://www.clcboats.com/scripts/phpThumb/phpThumb.php?src=/images/photos/boats/silosanddrawings/SW16_line_drawing_new.jpg&w=580"
+            }
+        },
+        "image2": {
+            "prototype": "digit/ui/image.reel"
+        },
+        "image3": {
+            "prototype": "digit/ui/image.reel"
+        },
+        "image4": {
+            "prototype": "digit/ui/image.reel"
+        },
+        "overall-length": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "axis": "horizontal",
+                "enabled": true,
+                "max": "6400",
+                "min": 0,
+                "step": "1",
+                "value": 50
+            }
+        },
+        "profile": {
+            "prototype": "ui/views/profile.reel",
+            "properties": {
+                "element": {"#": "profile"}
+            }
+        },
+        "projectProperties": {
+            "prototype": "ui/project-properties.reel",
+            "properties": {
+                "element": {"#": "projectProperties"},
+                "identifier": "properties-panel"
+            }
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -26,7 +103,21 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1 data-montage-id="title"></h1>
-        <canvas id="view-plan" data-montage-id="canvas"></canvas>
+        <div data-montage-id="projectProperties">
+
+        </div>
+        <div data-montage-id="halfBreadth">
+
+        </div>
+        <div data-montage-id="profile">
+
+        </div>
+        <div data-montage-id="bodyPlan">
+
+        </div>
+        <div data-montage-id="activeSection">
+
+        </div>
     </div>
 </body>
 </html>
